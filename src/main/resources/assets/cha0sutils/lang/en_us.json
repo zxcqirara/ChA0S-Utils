@@ -1,0 +1,12 @@
+{
+  // COMMANDS - TEST
+  "commands.test.unknown_color": "Error Color!!!",
+  "commands.hello": "Hello!",
+  "commands.hello.color": "Hello colored!",
+
+  // ITEM GROUP
+  "itemGroup.modTab": "ChA0S Utils - Items",
+
+  // ITEMS
+  "item.cha0sutils.death_stick": "Death Stick"
+}

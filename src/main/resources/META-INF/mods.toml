@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+license="What I need to write here?"
+[[mods]]
+modId="cha0sutils"
+version="${file.jarVersion}"
+displayName="ChA0S Utils"
+credits="Nobody"
+authors="ChA0S_f4me"
+description='''
+This mod add some utils (for me)...
+
+Да че я тут начал, русский же, хуле!
+'''
+[[dependencies.cha0sutils]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cha0sutils]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15, 1.16.3]"
+    ordering="NONE"
+    side="BOTH"
