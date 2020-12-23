@@ -5,11 +5,27 @@
   "commands.hello.color": "Hello colored!",
 
   // COMMANDS - REPAIR
-  "commands.repair.done": "Repair Done!",
-  "commands.repair.error.noItem": "You Don't Held Any Item!",
-  "commands.repair.error.notDamageable": "Item In Your Hand Is Not Damageable!",
-  "commands.repair.error.alreadyRepaired": "Item In Your Hand Already Repaired!",
-  "commands.repair.error.cantFindEntity": "Entity Not Found!",
+  "commands.repair.done": "Repair Done",
+  "commands.repair.error.noItem": "You Don't Held Any Item",
+  "commands.repair.error.notDamageable": "Item In Your Hand Is Not Damageable",
+  "commands.repair.error.alreadyRepaired": "Item In Your Hand Already Repaired",
+
+  // COMMANDS - HEAL
+  "commands.heal.done": "Heal Done",
+  "commands.heal.error.alreadyHealed": "Player Already Healed",
+
+  // COMMANDS - FEED
+  "commands.feed.done": "Feed Done",
+
+  // COMMANDS - FLY
+  "commands.fly.switched": "Fly Mode For This Player Switched",
+
+  // COMMANDS - GM
+  "commands.gm.switched": "Game Mode For This Player Switched To",
+
+  // COMMANDS - TIMES
+  "commands.times.day": "Time Set To Day",
+  "commands.times.night": "Time Set To Night",
 
   // ITEM GROUP
   "itemGroup.modTab": "ChA0S Utils - Items",
