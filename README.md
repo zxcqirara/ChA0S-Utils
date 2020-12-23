@@ -1,10 +1,10 @@
 # ChA0S-Utils
+![](https://img.shields.io/badge/|-Download-blue?style=flat-square&logo=v&link=https://github.com/ChA0S-f4me/ChA0S-Utils/releases)
 ## Русский
 ### О моде
 Это мод на разные утилиты, сделанные специально для меня. Так что все равно можете репортить ошибки на гитхабе)
 ### P.S.
 Я Русский :)
-
 
 ## English
 ### About Mod
