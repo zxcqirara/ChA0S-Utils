@@ -1,4 +1,4 @@
-package ru.cha0sf4me.cha0sutils.commands;
+package ru.cha0sf4me.cha0sutils.Commands;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
@@ -12,11 +12,10 @@ import net.minecraft.command.arguments.EntityArgument;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraftforge.eventbus.api.IEventBus;
 
 public class HelloCommand {
     private static final DynamicCommandExceptionType UNKNOWN_COLOR = new DynamicCommandExceptionType(color -> {
-        return new TranslationTextComponent("commands.test.unknown_color", color);
+        return new TranslationTextComponent("commands.hello.unknown_color", color);
     });
 
     private static final SuggestionProvider<CommandSource> SUGGEST_COLOR = (source, builder) -> {

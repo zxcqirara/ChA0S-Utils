@@ -7,7 +7,8 @@ import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import ru.cha0sf4me.cha0sutils.commands.HelloCommand;
+import ru.cha0sf4me.cha0sutils.Commands.HelloCommand;
+import ru.cha0sf4me.cha0sutils.Commands.Repair;
 
 @Mod.EventBusSubscriber
 public class EventsHandler
@@ -27,6 +28,7 @@ public class EventsHandler
     @SubscribeEvent
     public static void onServerStarting(final RegisterCommandsEvent event)
     {
-        HelloCommand.register(event.getDispatcher());
+        // HelloCommand.register(event.getDispatcher());
+        Repair.register(event.getDispatcher());
     }
 }
