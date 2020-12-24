@@ -7,6 +7,7 @@ import net.minecraft.command.Commands;
 import net.minecraft.command.arguments.EntityArgument;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class Repair {
@@ -24,7 +25,7 @@ public class Repair {
         else if (!player.getHeldItemMainhand().isDamageable()) {source.sendErrorMessage(new TranslationTextComponent("commands.repair.error.notDamageable", player.getDisplayName())); return 1;}
         else if (player.getHeldItemMainhand().getDamage() == 0) {source.sendErrorMessage(new TranslationTextComponent("commands.repair.error.alreadyRepaired", player.getDisplayName())); return 1;}
         player.getHeldItemMainhand().setDamage(0);
-        source.sendFeedback(new TranslationTextComponent("commands.repair.done", player.getDisplayName()), true);
+        source.sendFeedback(new TranslationTextComponent("commands.times.set").mergeStyle(TextFormatting.BLUE).append(new TranslationTextComponent("commands.times.night").mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
         return 1;
     }
 }

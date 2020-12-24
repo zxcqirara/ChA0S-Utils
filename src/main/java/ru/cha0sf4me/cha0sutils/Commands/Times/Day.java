@@ -18,8 +18,8 @@ public class Day {
     }
 
     private static int day(CommandSource source) {
-        source.getWorld().func_241114_a_(1000);
-        source.sendFeedback(new TranslationTextComponent("commands.time.day", source.getDisplayName()), true);
+        source.getWorld().setDayTime(1000);
+        source.sendFeedback(new TranslationTextComponent("commands.times.set").mergeStyle(TextFormatting.BLUE).append(new TranslationTextComponent("commands.times.day").mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
         return 1;
     }
 }

@@ -1,31 +1,35 @@
 {
   // COMMANDS - HELLO
-  "commands.hello.unknown_color": "Error Color!!!",
+  "commands.hello.unknown_color": "ColorError!!!",
   "commands.hello": "Hello!",
   "commands.hello.color": "Hello colored!",
 
+  // COMMANDS - GENERAL
+  "commands.general.player": "Player ",
+
   // COMMANDS - REPAIR
   "commands.repair.done": "Repair Done",
-  "commands.repair.error.noItem": "You Don't Held Any Item",
-  "commands.repair.error.notDamageable": "Item In Your Hand Is Not Damageable",
-  "commands.repair.error.alreadyRepaired": "Item In Your Hand Already Repaired",
+  "commands.repair.error.noItem": "Don't Held Any Item",
+  "commands.repair.error.notDamageable": "Item Is Not Damageable",
+  "commands.repair.error.alreadyRepaired": "Item Already Repaired",
 
   // COMMANDS - HEAL
-  "commands.heal.done": "Heal Done",
-  "commands.heal.error.alreadyHealed": "Player Already Healed",
+  "commands.heal.done": "Player %s Healed",
+  "commands.heal.error.alreadyHealed": "Already Healed",
 
   // COMMANDS - FEED
   "commands.feed.done": "Feed Done",
 
   // COMMANDS - FLY
-  "commands.fly.switched": "Fly Mode For This Player Switched",
+  "commands.fly.switched": "Fly Mode ",
 
   // COMMANDS - GM
-  "commands.gm.switched": "Game Mode For This Player Switched To",
+  "commands.gm.switched": "Set Game Mode ",
 
   // COMMANDS - TIMES
-  "commands.times.day": "Time Set To Day",
-  "commands.times.night": "Time Set To Night",
+  "commands.times.set": "Time Set To ",
+  "commands.times.day": "Day",
+  "commands.times.night": "Night",
 
   // ITEM GROUP
   "itemGroup.modTab": "ChA0S Utils - Items",

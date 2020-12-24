@@ -26,7 +26,7 @@ public class Gm {
         } else if (mode == 3) {
             player.setGameType(GameType.SPECTATOR);
         }
-        source.sendFeedback(new TranslationTextComponent("commands.gm.switched", player.getDisplayName(), new StringTextComponent(" "+mode)), true);
+        source.sendFeedback(new TranslationTextComponent("commands.gm.switched").mergeStyle(TextFormatting.BLUE).append(new StringTextComponent(mode.toString()).mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
         return 1;
     }
 }

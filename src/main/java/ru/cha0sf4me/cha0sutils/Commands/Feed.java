@@ -8,6 +8,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class Feed {
@@ -21,7 +22,7 @@ public class Feed {
 
     private static int feed(CommandSource source, ServerPlayerEntity player) {
         player.addPotionEffect(new EffectInstance(Effects.SATURATION, 1, 999, true, false));
-        source.sendFeedback(new TranslationTextComponent("commands.feed.done", player.getDisplayName()), true);
+        source.sendFeedback(new TranslationTextComponent("commands.feed.done").mergeStyle(TextFormatting.BLUE), true);
         return 1;
     }
 }

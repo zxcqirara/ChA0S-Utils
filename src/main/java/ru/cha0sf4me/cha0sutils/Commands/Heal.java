@@ -6,6 +6,8 @@ import net.minecraft.command.Commands;
 import net.minecraft.command.arguments.EntityArgument;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class Heal {
@@ -23,7 +25,7 @@ public class Heal {
             return 1;
         }
         player.setHealth(player.getMaxHealth());
-        source.sendFeedback(new TranslationTextComponent("commands.heal.done", player.getDisplayName()), true);
+        source.sendFeedback(new TranslationTextComponent("commands.heal.done", TextFormatting.LIGHT_PURPLE + source.getDisplayName().getString() + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
         return 1;
     }
 }
