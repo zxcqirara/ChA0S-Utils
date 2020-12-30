@@ -19,7 +19,7 @@ public class Day {
 
     private static int day(CommandSource source) {
         source.getWorld().setDayTime(1000);
-        source.sendFeedback(new TranslationTextComponent("commands.times.set").mergeStyle(TextFormatting.BLUE).append(new TranslationTextComponent("commands.times.day").mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
+        source.sendFeedback(new TranslationTextComponent("commands.times.set", TextFormatting.LIGHT_PURPLE + "DAY" + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
         return 1;
     }
 }

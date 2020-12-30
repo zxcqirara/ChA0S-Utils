@@ -27,9 +27,14 @@
   "commands.gm.switched": "Set Game Mode ",
 
   // COMMANDS - TIMES
-  "commands.times.set": "Time Set To ",
-  "commands.times.day": "Day",
-  "commands.times.night": "Night",
+  "commands.times.set": "Time Set To %s",
+
+  // COMMANDS - TOSPAWN
+  "commands.tospawn.done": "Teleported to %s spawn",
+
+  // CONFIG
+  "config.kickForBadNick.translation": "Kick for bad nick",
+  "config.kickForBadNick.reason": "(Auto-Kick) Change nick! Bad Nick!",
 
   // ITEM GROUP
   "itemGroup.modTab": "ChA0S Utils - Items",

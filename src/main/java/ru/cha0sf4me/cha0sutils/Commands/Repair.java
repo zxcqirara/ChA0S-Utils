@@ -25,7 +25,7 @@ public class Repair {
         else if (!player.getHeldItemMainhand().isDamageable()) {source.sendErrorMessage(new TranslationTextComponent("commands.repair.error.notDamageable", player.getDisplayName())); return 1;}
         else if (player.getHeldItemMainhand().getDamage() == 0) {source.sendErrorMessage(new TranslationTextComponent("commands.repair.error.alreadyRepaired", player.getDisplayName())); return 1;}
         player.getHeldItemMainhand().setDamage(0);
-        source.sendFeedback(new TranslationTextComponent("commands.times.set").mergeStyle(TextFormatting.BLUE).append(new TranslationTextComponent("commands.times.night").mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
+        source.sendFeedback(new TranslationTextComponent("commands.repair.done").mergeStyle(TextFormatting.BLUE), true);
         return 1;
     }
 }

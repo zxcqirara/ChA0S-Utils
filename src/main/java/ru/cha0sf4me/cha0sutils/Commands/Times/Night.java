@@ -15,7 +15,7 @@ public class Night {
 
     private static int night(CommandSource source) {
         source.getWorld().setDayTime(18000);
-        source.sendFeedback(new TranslationTextComponent("commands.times.set").mergeStyle(TextFormatting.BLUE).append(new TranslationTextComponent("commands.times.night").mergeStyle(TextFormatting.LIGHT_PURPLE)), true);
+        source.sendFeedback(new TranslationTextComponent("commands.times.set", TextFormatting.LIGHT_PURPLE + "NIGHT" + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
         return 1;
     }
 }

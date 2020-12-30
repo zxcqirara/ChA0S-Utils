@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import ru.cha0sf4me.cha0sutils.Items.DeathStick;
+import ru.cha0sf4me.cha0sutils.Items.DropPickaxe;
 import ru.cha0sf4me.cha0sutils.Main;
 
 public class ItemsHandler {
@@ -13,6 +14,7 @@ public class ItemsHandler {
 
     // ITEMS
     public static final RegistryObject<Item> DEATH_STICK = ITEMS.register("death_stick",  DeathStick::new);
+    // public static final RegistryObject<Item> DROP_PICKAXE = ITEMS.register("drop_pickaxe",  DropPickaxe::new);
 
     public static void reg() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
