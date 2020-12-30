@@ -34,16 +34,6 @@ public class EventsHandler
         Night.register(e.getDispatcher());
 
         ToSpawn.register(e.getDispatcher());
-    }
-
-    @SubscribeEvent
-    public void onJoin(EntityJoinWorldEvent event)
-    {
-        if (event.getEntity() instanceof PlayerEntity)
-        {
-            PlayerEntity player = (PlayerEntity) event.getEntity();
-            // player.sendMessage(new StringTextComponent("Hello, %p!".replace("%p", player.getName().getString())));
-            System.out.printf("PLAYER %s JOINED!!!", player.getName().getString());
-        }
+        Thor.register(e.getDispatcher());
     }
 }

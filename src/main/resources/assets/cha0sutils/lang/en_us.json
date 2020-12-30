@@ -32,6 +32,11 @@
   // COMMANDS - TOSPAWN
   "commands.tospawn.done": "Teleported to %s spawn",
 
+  // COMMANDS - THOR
+  "commands.thor.done": "Thored %s",
+  "commands.thor.multi_done": "Thored %s entities",
+  "commands.thor.error.null": "Lightning bolt entity is null",
+
   // CONFIG
   "config.kickForBadNick.translation": "Kick for bad nick",
   "config.kickForBadNick.reason": "(Auto-Kick) Change nick! Bad Nick!",
