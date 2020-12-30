@@ -4,6 +4,7 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.Commands;
+import net.minecraft.command.arguments.EntityArgument;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.text.*;
 import net.minecraft.world.GameType;
@@ -13,6 +14,8 @@ public class Gm {
         dispatcher.register(Commands.literal("gm")
         .then(Commands.argument("mode", IntegerArgumentType.integer(0, 3)).executes(source -> {
             return gm(source.getSource(), source.getSource().asPlayer(), IntegerArgumentType.getInteger(source, "mode"));
+        })).then(Commands.argument("target", EntityArgument.player()).executes(source -> {
+            return gm(source.getSource(), EntityArgument.getPlayer(source, "target"), IntegerArgumentType.getInteger(source, "mode"));
         })));
     }
 

@@ -37,7 +37,7 @@
   "config.kickForBadNick.reason": "(Auto-Kick) Change nick! Bad Nick!",
 
   // ITEM GROUP
-  "itemGroup.modTab": "ChA0S Utils - Items",
+  "itemGroup.modTab": "ChA0S Utils",
 
   // ITEMS
   "item.cha0sutils.death_stick": "Death Stick"
