@@ -9,14 +9,16 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.text.*;
 import net.minecraft.world.GameType;
 
+import java.util.Collections;
+
 public class Gm {
     public static void register(CommandDispatcher dispatcher) {
         dispatcher.register(Commands.literal("gm")
         .then(Commands.argument("mode", IntegerArgumentType.integer(0, 3)).executes(source -> {
             return gm(source.getSource(), source.getSource().asPlayer(), IntegerArgumentType.getInteger(source, "mode"));
-        })).then(Commands.argument("target", EntityArgument.player()).executes(source -> {
+        }).then(Commands.argument("target", EntityArgument.players()).executes(source -> {
             return gm(source.getSource(), EntityArgument.getPlayer(source, "target"), IntegerArgumentType.getInteger(source, "mode"));
-        })));
+        }))));
     }
 
     private static int gm(CommandSource source, ServerPlayerEntity player, Integer mode) {
