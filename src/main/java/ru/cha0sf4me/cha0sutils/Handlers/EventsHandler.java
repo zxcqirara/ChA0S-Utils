@@ -11,6 +11,9 @@ import net.minecraftforge.fml.common.Mod;
 import ru.cha0sf4me.cha0sutils.Commands.*;
 import ru.cha0sf4me.cha0sutils.Commands.Times.Day;
 import ru.cha0sf4me.cha0sutils.Commands.Times.Night;
+import ru.cha0sf4me.cha0sutils.Commands.Weather.Rain;
+import ru.cha0sf4me.cha0sutils.Commands.Weather.Sun;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -35,5 +38,8 @@ public class EventsHandler
 
         ToSpawn.register(e.getDispatcher());
         Thor.register(e.getDispatcher());
+
+        Sun.register(e.getDispatcher());
+        Rain.register(e.getDispatcher());
     }
 }
