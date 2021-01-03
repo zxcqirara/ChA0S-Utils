@@ -4,27 +4,28 @@
   "commands.hello": "Hello!",
   "commands.hello.color": "Hello colored!",
 
-  // COMMANDS - GENERAL
-  "commands.general.player": "Player ",
-
   // COMMANDS - REPAIR
-  "commands.repair.done": "Repair Done",
+  "commands.repair.done": "Repaired For %s Done",
+  "commands.repair.multi_done": "Repaired For %s players",
   "commands.repair.error.noItem": "Don't Held Any Item",
   "commands.repair.error.notDamageable": "Item Is Not Damageable",
   "commands.repair.error.alreadyRepaired": "Item Already Repaired",
 
   // COMMANDS - HEAL
   "commands.heal.done": "Player %s Healed",
+  "commands.heal.multi_done": "Healed %s players",
   "commands.heal.error.alreadyHealed": "Already Healed",
 
   // COMMANDS - FEED
-  "commands.feed.done": "Feed Done",
+  "commands.feed.done": "Player %s Fed",
+  "commands.feed.multi_done": "Fed %s players",
 
   // COMMANDS - FLY
   "commands.fly.switched": "Fly Mode ",
 
   // COMMANDS - GM
-  "commands.gm.switched": "Set Game Mode ",
+  "commands.gm.switched": "Changed %s Game Mode To %s",
+  "commands.gm.multi_switched": "Changed Game Mode for %s players",
 
   // COMMANDS - TIMES
   "commands.times.set": "Time Set To %s",
@@ -48,5 +49,6 @@
   "itemGroup.modTab": "ChA0S Utils",
 
   // ITEMS
-  "item.cha0sutils.death_stick": "Death Stick"
+  "item.cha0sutils.death_stick": "Death Stick",
+  "item.cha0sutils.thor_stick": "Thor Stick"
 }

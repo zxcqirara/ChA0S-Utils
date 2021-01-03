@@ -20,19 +20,29 @@ public class Thor {
         })));
     }
 
-    private static int thor(CommandSource source, Collection<? extends Entity> player) {
+    private static int thor(CommandSource source, Collection<? extends Entity> entities) {
         LightningBoltEntity bolt = new LightningBoltEntity(EntityType.LIGHTNING_BOLT, source.getWorld());
-        for (Entity i: player) {
+
+        for (Entity i: entities) {
             if (i == null) {source.sendErrorMessage(new TranslationTextComponent("commands.thor.error.null")); return 1;}
             bolt.setPosition(i.getPosX(), i.getPosY(), i.getPosZ());
             source.getWorld().addEntity(bolt);
-            if (player.size() == 1) {
-                source.sendFeedback(new TranslationTextComponent("commands.thor.done", TextFormatting.LIGHT_PURPLE + i.getDisplayName().getString() + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
-            }
         }
-        if (player.size() > 1) {
-            source.sendFeedback(new TranslationTextComponent("commands.thor.multi_done", TextFormatting.LIGHT_PURPLE + String.valueOf(player.size()) + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
-        }
+
+        source.sendFeedback(new TranslationTextComponent("commands.thor.multi_done", TextFormatting.LIGHT_PURPLE + String.valueOf(entities.size()) + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
+
+        return 1;
+    }
+
+    private static int thor(CommandSource source, Entity entity) {
+        LightningBoltEntity bolt = new LightningBoltEntity(EntityType.LIGHTNING_BOLT, source.getWorld());
+
+        if (entity == null) {source.sendErrorMessage(new TranslationTextComponent("commands.thor.error.null")); return 1;}
+        bolt.setPosition(entity.getPosX(), entity.getPosY(), entity.getPosZ());
+        source.getWorld().addEntity(bolt);
+
+        source.sendFeedback(new TranslationTextComponent("commands.thor.done", TextFormatting.LIGHT_PURPLE + entity.getDisplayName().getString() + TextFormatting.BLUE).mergeStyle(TextFormatting.BLUE), true);
+
         return 1;
     }
 }
