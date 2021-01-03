@@ -51,17 +51,12 @@ public class EventsHandler
     }
 
     @SubscribeEvent
-    public void onUpdates(RenderPlayerEvent.Pre e)
+    public static void onUpdates(RenderPlayerEvent.Pre e)
     {
-        if( e.getPlayer().getHeldItemMainhand().getItem() == Items.APPLE)
+        ItemStack stack = e.getPlayer().getHeldItemMainhand();
+        if(e.getPlayer().isInvisible())
         {
-            ItemStack stack = e.getPlayer().getHeldItemMainhand();
-            System.out.println("BARRIER 1");
-            if(e.getPlayer().isInvisible())
-            {
-                System.out.println("BARRIER 2");
-                e.setCanceled(true);
-            }
+            e.setCanceled(true);
         }
     }
 }
